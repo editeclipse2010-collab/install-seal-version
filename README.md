@@ -1,1 +1,0 @@
-# install-seal-version
