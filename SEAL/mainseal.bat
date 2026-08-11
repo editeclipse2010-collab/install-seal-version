@@ -40,7 +40,7 @@ color 0f
 set "password"==""
 set /p "input=Password: "
 if "!input!"=="" (
-set "password"==""
+goto bad_config
 ) else (
 set "password=!input!"
 goto config_good
@@ -54,12 +54,22 @@ echo %password%> "c:\SEAL\configs\sealPass.txt"
 attrib +h +s "c:\SEAL\configs\sealUser.txt"
 attrib +h +s "c:\SEAL\configs\sealPass.txt"
 cls
-echo Configuration saved!
+echo Configuration saved.
 echo.
 echo Username: %username%
 echo Password: %password%
 pause
 goto MAIN
+
+:bad_config
+cls
+color 04
+echo Uh oh...
+echo.
+echo You cannot have a blank password. Press any key to continue...
+pause >nul
+color 0f
+goto no_config
 
 :MAIN
 cls
@@ -118,7 +128,7 @@ goto CONFIRM
 )
 cls
 color 04
-echo Uh oh!
+echo Uh oh...
 echo.
 echo Invalid Password. (incorrect)
 pause
