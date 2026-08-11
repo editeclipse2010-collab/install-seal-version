@@ -18,7 +18,8 @@ attrib +h +s "c:\SEAL\configs\sealUser.txt" >nul 2>&1
 attrib +h +s "c:\SEAL\configs\sealPass.txt" >nul 2>&1
 cls
 echo loaded
-pause
+echo press any key to continue
+pause > nul
 goto MAIN
 
 :noconfig
