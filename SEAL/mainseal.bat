@@ -89,9 +89,10 @@ echo loading file explorer...
 explorer "C:\SEAL\seal\"
 goto CONFIRM
 )
+cls
 ren "C:\SEAL\seal\SealContainer" "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
 attrib +h +s "C:\SEAL\seal\Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
-cls
+taskkill "file explorer
 color 0f
 echo SEAL by Howisthisnot85
 echo.
