@@ -91,6 +91,14 @@ goto CONFIRM
 )
 ren "C:\SEAL\seal\SealContainer" "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
 attrib +h +s "C:\SEAL\seal\Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
+cls
+color 0f
+echo SEAL by Howisthisnot85
+echo.
+echo Welcome, %username%
+echo.
+echo Seal activated.
+pause
 goto UNLOCK
 
 :UNLOCK
