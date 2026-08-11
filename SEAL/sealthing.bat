@@ -1,7 +1,7 @@
 @echo off
 cls
 color 0f
-title seal thing
+title SEAL - ERROR
 :LOOP
 cls
 call "C:\SEAL\mainseal.bat"
