@@ -6,7 +6,7 @@ if NOT EXIST "C:\SEAL\seal\SealContainer" (
 copy "C:\SEAL\data\SealContainer" "C:\SEAL\seal" >nul 2>&1
 )
 color 0f
-title seal thing
+title SEAL
 setlocal enabledelayedexpansion
 if not exist "c:\SEAL\configs\sealUser.txt" goto :noconfig
 if not exist "c:\SEAL\configs\sealPass.txt" goto :noconfig
@@ -24,9 +24,9 @@ goto MAIN
 
 :noconfig
 cls
-echo No config detected!
+echo No config detected...
 echo.
-echo Press any key to start the config process.
+echo Press any key to setup the config.
 pause > nul
 cls
 set /p "input=Username: "
@@ -64,7 +64,7 @@ goto MAIN
 :MAIN
 cls
 color 0f
-echo SEAL v1.0
+echo SEAL by Howisthisnot85
 echo.
 echo Welcome, %username%
 echo loading ui...
@@ -75,7 +75,7 @@ copy "C:\SEAL\data\SealContainer" "C:\SEAL\seal" >nul 2>&1
 
 :CONFIRM
 cls
-echo SEAL v1.0
+echo SEAL by Howisthisnot85
 echo.
 echo Welcome, %username%
 echo Seal Status: Inactive.
@@ -96,7 +96,7 @@ goto UNLOCK
 :UNLOCK
 color 0f
 cls
-echo SEAL v1.0
+echo SEAL by Howisthisnot85
 echo.
 echo Welcome, %username%
 echo Seal Status: Active
