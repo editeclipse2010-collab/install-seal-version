@@ -3,6 +3,7 @@ cls
 color 0f
 title seal thing
 :LOOP
+cls
 call "C:\SEAL\mainseal.bat"
 color 04
 echo Uh oh!
