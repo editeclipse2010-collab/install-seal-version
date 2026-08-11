@@ -92,7 +92,6 @@ goto CONFIRM
 cls
 ren "C:\SEAL\seal\SealContainer" "Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
 attrib +h +s "C:\SEAL\seal\Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}"
-taskkill "explorer.exe" >nul 2>&1
 color 0f
 echo SEAL by Howisthisnot85
 echo.
