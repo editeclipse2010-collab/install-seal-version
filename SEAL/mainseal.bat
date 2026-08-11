@@ -1,7 +1,7 @@
 mode con: cols=65 lines=25
 @echo off
 cls
-echo loading
+echo loading...
 if NOT EXIST "C:\SEAL\seal\SealContainer" (
 copy "C:\SEAL\data\SealContainer" "C:\SEAL\seal" >nul 2>&1
 )
