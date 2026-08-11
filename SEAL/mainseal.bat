@@ -66,7 +66,7 @@ cls
 color 0f
 echo SEAL by Howisthisnot85
 echo.
-echo Welcome, %username%
+echo Welcome, %username%.
 echo loading ui...
 if EXIST "C:\SEAL\seal\Control Panel.{21EC2020-3AEA-1069-A2DD-08002B30309D}" goto UNLOCK
 if NOT EXIST "C:\SEAL\seal\SealContainer" (
@@ -77,7 +77,7 @@ copy "C:\SEAL\data\SealContainer" "C:\SEAL\seal" >nul 2>&1
 cls
 echo SEAL by Howisthisnot85
 echo.
-echo Welcome, %username%
+echo Welcome, %username%.
 echo Seal Status: Inactive.
 echo.
 echo [F] Toggle Seal
@@ -95,7 +95,7 @@ cls
 color 0f
 echo SEAL by Howisthisnot85
 echo.
-echo Welcome, %username%
+echo Welcome, %username%.
 echo.
 echo Seal activated.
 pause
@@ -106,7 +106,7 @@ color 0f
 cls
 echo SEAL by Howisthisnot85
 echo.
-echo Welcome, %username%
+echo Welcome, %username%.
 echo Seal Status: Active
 echo.
 set "pass"==""
